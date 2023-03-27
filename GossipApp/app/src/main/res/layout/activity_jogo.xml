@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/pbTimer"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="53dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvTrueOrFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True or False?"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="185dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvGossip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gossip"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="297dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbTrueResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="True"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="426dp" />
+
+            <RadioButton
+                android:id="@+id/rbFalseResponse"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="False"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="428dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responder"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="559dp" />
+    </LinearLayout>
+</LinearLayout>
